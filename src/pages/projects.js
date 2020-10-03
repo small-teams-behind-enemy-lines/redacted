@@ -54,7 +54,7 @@ const Projects = () => {
               {
                 edge.node.frontmatter.featured_image && (
                   <Img
-                  className={projectsStyles.featured_image}
+                    className={projectsStyles.featured_image}
                     fluid={edge.node.frontmatter.featured_image.childImageSharp.fluid}
                     alt={edge.node.frontmatter.title}
                   />
