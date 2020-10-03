@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Are We Cool Yet?",
+    description: "... oven aficionado group ...",
+    author: "[REDACTED]",
+  },
   plugins: ["gatsby-plugin-sass"],
 }
