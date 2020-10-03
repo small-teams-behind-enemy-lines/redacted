@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/redacted",  // gh-pages deployment requirement
   siteMetadata: {
     title: "Are We Cool Yet?",
     description: "... oven aficionado group ...",
