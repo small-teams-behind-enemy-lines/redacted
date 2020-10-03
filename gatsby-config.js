@@ -11,10 +11,10 @@ module.exports = {
     author: "[REDACTED]",
   },
   plugins: [
-
     "gatsby-plugin-sass",         // scss/sass support
     "gatsby-transformer-remark",  // markdown parser using remark
     "gatsby-transformer-sharp",   // process gatsby-image react component images
+    "gatsby-plugin-react-helmet", // manage document head
     // filesystem data source support
     {
       resolve: "gatsby-source-filesystem",

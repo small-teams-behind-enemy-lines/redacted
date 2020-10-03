@@ -3,6 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import projectsStyles from "./projects.module.scss"
+import Metadata from "../components/metadata"
 
 const Projects = () => {
   const data = useStaticQuery(
@@ -35,6 +36,7 @@ const Projects = () => {
   )
   return (
     <Layout>
+      <Metadata title="Projects" description="AWCY? Projects" />
       <ul className={projectsStyles.projects}>
         {data.allMarkdownRemark.edges.map(edge => {
           return (

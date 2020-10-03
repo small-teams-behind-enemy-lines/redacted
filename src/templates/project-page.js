@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import projectStyles from "./projectPage.module.scss"
+import Metadata from "../components/metadata"
 
 export const query = graphql`
   query ($slug:String!) {
@@ -28,6 +29,8 @@ export const query = graphql`
 const ProjectPage = props => {
   return (
     <Layout>
+      <Metadata title={props.data.markdownRemark.frontmatter.title} 
+                description={props.data.markdownRemark.frontmatter.description}/>
       <div className={projectStyles.content}>
         <h1>{props.data.markdownRemark.frontmatter.title}</h1>
         <span className={projectStyles.meta}>
