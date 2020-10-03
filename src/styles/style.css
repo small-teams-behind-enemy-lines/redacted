@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    color: #464646;
+    font-size: 100%;
+    margin: 0;
+    line-height: 1.4283;
+    font-family: "Segoe UI", Roboto, Verdana, "Helvetica Neue", sans-serif;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 400;
+  }
+  a {
+    color: #f44f18;
+    text-decoration: none;
+  }

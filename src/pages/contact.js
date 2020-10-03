@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 
-const Index = () => {
+const Contact = () => {
   return (
     <Layout>
-      <h1>Home page</h1>
-      <h2>... blurb ...</h2>
+      <h1>Contact Page</h1>
+      <p>follow the white rabbit...</p>
     </Layout>
   )
 }
 
-export default Index
+export default Contact
