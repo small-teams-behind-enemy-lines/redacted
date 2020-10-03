@@ -9,6 +9,7 @@ module.exports = {
     title: "Are We Cool Yet?",
     description: "... oven aficionado group ...",
     author: "[REDACTED]",
+    keywords: "AWCY, AWCY?, REDACTED, [REDACTED]",
   },
   plugins: [
     "gatsby-plugin-sass",         // scss/sass support

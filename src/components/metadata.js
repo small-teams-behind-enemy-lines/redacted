@@ -10,6 +10,7 @@ const Metadata = ({ title, description }) => {
           siteMetadata {
             title
             description
+            author
           }
         }
       }
