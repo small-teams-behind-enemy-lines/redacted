@@ -1,28 +1,40 @@
 import React from "react"
 import { Link } from "gatsby"
+import headerStyles from "./header.module.scss"
 
 const Header = () => {
   return (
-    <header>
-      <div>
-        <p>
-          <Link to="/">AWCY</Link>
+    <header className={headerStyles.header}>
+      <div className={headerStyles.overlay}></div>
+      <div className={headerStyles.heroContent}>
+        <p className={headerStyles.brand}>
+          <Link to="/">Ibas Majid</Link>
         </p>
-        <p>Art is not meant to be contained.</p>
+        <p className={headerStyles.description}>
+          I teach JavaScript, React, GraphQL and Gatsby
+        </p>
       </div>
-      <nav>
-        <ul>
+      <nav className={headerStyles.navContainer}>
+        <ul className={headerStyles.navList}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" activeClassName={headerStyles.activeMenuItem}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/projects/">Projects</Link>
+            <Link to="/projects/" activeClassName={headerStyles.activeMenuItem}>
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to="/contact/">Contact</Link>
+            <Link to="/about/" activeClassName={headerStyles.activeMenuItem}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/about/">About</Link>
+            <Link to="/contact/" activeClassName={headerStyles.activeMenuItem}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
