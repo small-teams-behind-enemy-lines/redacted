@@ -11,8 +11,11 @@ module.exports = {
     author: "[REDACTED]",
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-transformer-remark",
+
+    "gatsby-plugin-sass",         // scss/sass support
+    "gatsby-transformer-remark",  // markdown parser using remark
+    "gatsby-transformer-sharp",   // process gatsby-image react component images
+    // filesystem data source support
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -20,6 +23,23 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
+    // imagery support/optimization within markdown
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 550,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
+    // *** ADD GIT PROJECT REPOS HERE *** //
     {
       resolve: "gatsby-source-git",
       options: {
