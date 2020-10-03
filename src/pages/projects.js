@@ -6,7 +6,7 @@ const Projects = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMarkdownRemark(filter: {fileAbsolutePath: {glob: "!**/*.md"}}, sort: {fields: frontmatter___date, order: DESC}) {
+        allMarkdownRemark(filter: {fileAbsolutePath: {glob: "!**/*.md"}, frontmatter: {title: {ne: ""}}}, sort: {fields: frontmatter___date, order: DESC}) {
           edges {
             node {
               frontmatter {
