@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <Layout>
       <Metadata title="Home" />
-      <h1>Home page</h1>
+      <h1>Home Spot</h1>
       <h2>... blurb ...</h2>
     </Layout>
   )
