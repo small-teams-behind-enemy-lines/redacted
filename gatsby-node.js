@@ -34,3 +34,30 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         });
     }
 }
+
+exports.createPages = async ({ graphql, actions }) => {
+    const { createPage } = actions
+
+    const response = await graphql(`
+      query {
+        allMarkdownRemark(filter: {fileAbsolutePath: {glob: "!**/*.md"}, frontmatter: {title: {ne: ""}}}) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `)
+    response.data.allMarkdownRemark.edges.forEach(edge => {
+      createPage({
+        path: `/projects/${edge.node.fields.slug}`,
+        component: path.resolve("./src/templates/project-page.js"),
+        context: {
+          slug: edge.node.fields.slug,
+        },
+      })
+    })
+  }
