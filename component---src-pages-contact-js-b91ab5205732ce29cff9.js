@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{"Cuy+":function(t,e,n){"use strict";n.r(e);var a=n("q1tI"),l=n.n(a),c=n("Bl7J"),o=n("3CE+");e.default=function(){return l.a.createElement(c.a,null,l.a.createElement(o.a,{title:"Contact",description:"Contact AWCY?"}),l.a.createElement("h1",null,"Contact Page"),l.a.createElement("p",null,"follow the white rabbit..."))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-b91ab5205732ce29cff9.js.map

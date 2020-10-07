@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"3XHS":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),o=n("Bl7J"),u=n("3CE+");t.default=function(){return l.a.createElement(o.a,null,l.a.createElement(u.a,{title:"About",description:"About AWCY?"}),l.a.createElement("h1",null,"About Page"),l.a.createElement("p",null,"AWCY oven aficionados."))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-03c87b50f473bccb50a2.js.map
